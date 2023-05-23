@@ -54,6 +54,8 @@ a{
 
 .slideshow,
 .slideshow:after {
+	box-sizing: border-box;
+	border: 30px solid black;
     position: fixed;
     width: 100%;
     height: 100%;
