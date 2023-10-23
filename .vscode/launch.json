@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "file:///C:/hm/palio/webSiteScroll/palio/webSite/intro.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

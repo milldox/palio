@@ -1,21 +1,14 @@
 
-/* General Demo Style */
 body{
-  /* font-family: "helvetica neue", helvetica; */
-  font-family: 'Tangerine', serif;
-  background: #000;
-  font-weight: 400;
   font-size: 15px;
-  color: #aa3e03;
   overflow-y: auto;
   overflow-x: auto;
   border:12px;
 }
 .ie7 body{
-  overflow:hidden;
+  overflow:auto;
 }
 a{
-  color: #333;
   text-decoration: none;
 }
 .clr{
@@ -23,34 +16,32 @@ a{
 }
 
 
-.mainPage{
-	position: relative;
-	top: 100vh ;
-	font-size: 75px;
-}
-
-.container {
-  padding: 0px 0px 0px 0px;
-  margin: 10px 30px 5px 30px;
+.infoSections{
+  background-color: transparent;
   position: relative;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  text-align: left;
-	
-  /* font-family: "helvetica neue", helvetica; */
-	font-family: 'Tangerine', serif;
-	font-size: 75px;
-	line-height: normal;
-	font-weight: 400;
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  top: 100vh ;
+  font-size: 75px;
 }
 
-.slideshow
+.introTitle {
+  padding: 0px 0px 0px 0px;
+  margin: 15px 30px 5px 30px;
+  position: relative;
+  text-align: left;
+  font-family: 'Tangerine', serif;
+  font-size: 75px;
+  line-height: normal;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.introShowImg
 {
 	box-sizing: border-box;
-	border: solid rgb(0, 0, 0);
-	border-width: 10px 10px 10px 10px ;
     position: absolute;
+	border: solid rgb(0, 0, 0);
+	border-width: 0px 0px 0px 0px ;
     width: 100%;
     height: 100%;
     top: 0px;
@@ -58,10 +49,11 @@ a{
     z-index: 0;
 	overflow: hidden;
 }
-.slideshow li span {
+
+.introShowImg li span {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0px;
     left: 0px;
     color: transparent;
@@ -73,28 +65,27 @@ a{
     z-index: 0;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 24s linear infinite 0s;
     -moz-animation: imageAnimation 24s linear infinite 0s;
     -o-animation: imageAnimation 24s linear infinite 0s;
     -ms-animation: imageAnimation 24s linear infinite 0s;
     animation: imageAnimation 24s linear infinite 0s;
 }
-.slideshow li div {
-    z-index: 1000;
+.introShowImg li div {
     position: absolute;
-    bottom: 30px;
-    left: 0px;
     width: 100%;
+    left: 0px;
+    bottom: 30px;
     text-align: center;
 	overflow: hidden;
     opacity: 0;
+    z-index: 1000;
     -webkit-animation: titleAnimation 24s linear infinite 0s;
     -moz-animation: titleAnimation 24s linear infinite 0s;
     -o-animation: titleAnimation 24s linear infinite 0s;
     -ms-animation: titleAnimation 24s linear infinite 0s;
     animation: titleAnimation 24s linear infinite 0s;
 }
-.slideshow li div h3 {
+.introShowImg li div h3 {
   /* font-family: "helvetica neue", helvetica; */
 	font-family: 'Kalam', cursive;
   	font-size: 100px;
@@ -102,8 +93,8 @@ a{
   	line-height: 200px;
 	color: rgba(255,255,255, 0.8);
 }
-.slideshow li:nth-child(1) span { background-image: url('../images/welcomeinn1.jpg') }
-.slideshow li:nth-child(2) span {
+.introShowImg li:nth-child(1) span { background-image: url('../images/welcomeinn1.jpg') }
+.introShowImg li:nth-child(2) span {
     background-image: url('../images/welcomeinn2.jpg');
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
@@ -111,7 +102,7 @@ a{
     -ms-animation-delay: 8s;
     animation-delay: 8s;
 }
-.slideshow li:nth-child(3) span {
+.introShowImg li:nth-child(3) span {
     background-image: url('../images/welcomeinn3.jpg');
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
@@ -120,14 +111,14 @@ a{
     animation-delay: 16s;
 }
 
-.slideshow li:nth-child(2) div {
+.introShowImg li:nth-child(2) div {
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     -o-animation-delay: 8s;
     -ms-animation-delay: 8s;
     animation-delay: 8s;
 }
-.slideshow li:nth-child(3) div {
+.introShowImg li:nth-child(3) div {
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
     -o-animation-delay: 16s;
@@ -135,7 +126,7 @@ a{
     animation-delay: 16s;
 }
 
-/* Animation for the slideshow images */
+/* Animation for the introShowImg images */
 @-webkit-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -339,12 +330,12 @@ a{
 }
 
 /* Show at least something when animations not supported */
-.no-cssanimations .slideshow li span{
+.no-cssanimations .introShowImg li span{
 	opacity: 1;
 }
 @media screen and (max-width: 1140px) { 
-	.slideshow li div h3 { font-size: 100px }
+	.introShowImg li div h3 { font-size: 100px }
 }
 @media screen and (max-width: 600px) { 
-	.slideshow li div h3 { font-size: 50px }
+	.introShowImg li div h3 { font-size: 50px }
 }
