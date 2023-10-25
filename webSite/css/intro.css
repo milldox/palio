@@ -1,9 +1,7 @@
 
 body{
-  font-size: 15px;
   overflow-y: auto;
   overflow-x: auto;
-  border:12px;
 }
 .ie7 body{
   overflow:auto;
@@ -15,22 +13,14 @@ a{
   clear: both;
 }
 
-
-.infoSections{
-  background-color: transparent;
-  position: relative;
-  top: 100vh ;
-  font-size: 75px;
-}
-
 .introTitle {
-  padding: 0px 0px 0px 0px;
-  margin: 15px 30px 5px 30px;
   position: relative;
+	height: 100vh;
+  margin: 5vh 0px 0px 5%;
+
   text-align: left;
   font-family: 'Tangerine', serif;
-  font-size: 75px;
-  line-height: normal;
+  font-size: 5rem;
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -39,58 +29,56 @@ a{
 .introShowImg
 {
 	box-sizing: border-box;
-    position: absolute;
-	border: solid rgb(0, 0, 0);
-	border-width: 0px 0px 0px 0px ;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
+  position: absolute;
+	border: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
 	overflow: hidden;
 }
 
 .introShowImg li span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
 	overflow: auto;
-    opacity: 0;
-    z-index: 0;
+  opacity: 0;
+  z-index: 0;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-    -moz-animation: imageAnimation 24s linear infinite 0s;
-    -o-animation: imageAnimation 24s linear infinite 0s;
-    -ms-animation: imageAnimation 24s linear infinite 0s;
-    animation: imageAnimation 24s linear infinite 0s;
+  -moz-animation: imageAnimation 24s linear infinite 0s;
+  -o-animation: imageAnimation 24s linear infinite 0s;
+  -ms-animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s;
 }
 .introShowImg li div {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    bottom: 30px;
-    text-align: center;
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  text-align: center;
 	overflow: hidden;
-    opacity: 0;
-    z-index: 1000;
-    -webkit-animation: titleAnimation 24s linear infinite 0s;
-    -moz-animation: titleAnimation 24s linear infinite 0s;
-    -o-animation: titleAnimation 24s linear infinite 0s;
-    -ms-animation: titleAnimation 24s linear infinite 0s;
-    animation: titleAnimation 24s linear infinite 0s;
+  opacity: 0;
+  z-index: 1000;
+  -webkit-animation: titleAnimation 24s linear infinite 0s;
+  -moz-animation: titleAnimation 24s linear infinite 0s;
+  -o-animation: titleAnimation 24s linear infinite 0s;
+  -ms-animation: titleAnimation 24s linear infinite 0s;
+  animation: titleAnimation 24s linear infinite 0s;
 }
 .introShowImg li div h3 {
   /* font-family: "helvetica neue", helvetica; */
 	font-family: 'Kalam', cursive;
-  	font-size: 100px;
-  	padding: 0;
-  	line-height: 200px;
+  font-size: 6rem;
+  padding: 0;
+  line-height: 7rem;
 	color: rgba(255,255,255, 0.8);
 }
 .introShowImg li:nth-child(1) span { background-image: url('../images/welcomeinn1.jpg') }
@@ -338,4 +326,27 @@ a{
 }
 @media screen and (max-width: 600px) { 
 	.introShowImg li div h3 { font-size: 50px }
+}
+
+.infoSections{
+	box-sizing: border-box;
+	margin: 5rem 2rem;
+  position: relative;
+	font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+
+.infoText h{
+	margin: 5rem 10% 1rem 10%;
+	display: flow-root;
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 400;
+}
+
+.infoText p{
+	margin: 0 10%;
+	display: flow-root;
+	text-align: center;
+	font-size: 1.2rem;
 }
