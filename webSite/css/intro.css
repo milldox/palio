@@ -46,6 +46,7 @@ a{
   top: 0px;
   left: 0px;
   color: transparent;
+	background-color: rgb(69, 69, 83);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: none;
@@ -53,10 +54,12 @@ a{
   opacity: 0;
   z-index: 0;
 	backface-visibility: hidden;
+	/*
 	-webkit-backface-visibility: hidden;
   -moz-animation: imageAnimation 24s linear infinite 0s;
   -o-animation: imageAnimation 24s linear infinite 0s;
   -ms-animation: imageAnimation 24s linear infinite 0s;
+	*/
   animation: imageAnimation 24s linear infinite 0s;
 }
 .introShowImg li div {
@@ -67,10 +70,12 @@ a{
 	overflow: hidden;
   opacity: 0;
   z-index: 1000;
+	/*
   -webkit-animation: titleAnimation 24s linear infinite 0s;
   -moz-animation: titleAnimation 24s linear infinite 0s;
   -o-animation: titleAnimation 24s linear infinite 0s;
   -ms-animation: titleAnimation 24s linear infinite 0s;
+	*/
   animation: titleAnimation 24s linear infinite 0s;
 }
 .introShowImg li div h3 {
@@ -81,36 +86,45 @@ a{
   line-height: 7rem;
 	color: rgba(255,255,255, 0.8);
 }
-.introShowImg li:nth-child(1) span { background-image: url('../images/welcomeinn1.jpg') }
+.introShowImg li:nth-child(1) span { 
+	  background-image: url('../images/welcomeinn1.jpg') }
 .introShowImg li:nth-child(2) span {
     background-image: url('../images/welcomeinn2.jpg');
+		/*
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     -o-animation-delay: 8s;
     -ms-animation-delay: 8s;
+		*/
     animation-delay: 8s;
 }
 .introShowImg li:nth-child(3) span {
     background-image: url('../images/welcomeinn3.jpg');
+		/*
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
     -o-animation-delay: 16s;
     -ms-animation-delay: 16s;
+		*/
     animation-delay: 16s;
 }
 
 .introShowImg li:nth-child(2) div {
+		/*
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     -o-animation-delay: 8s;
     -ms-animation-delay: 8s;
+		*/
     animation-delay: 8s;
 }
 .introShowImg li:nth-child(3) div {
+		/*
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
     -o-animation-delay: 16s;
     -ms-animation-delay: 16s;
+		*/
     animation-delay: 16s;
 }
 
@@ -332,7 +346,7 @@ a{
 	box-sizing: border-box;
 	margin: 5rem 2rem;
   position: relative;
-	font-family: 'Lora', serif;
+  font-family: 'Sometype Mono', monospace;
   font-size: 1.2rem;
 }
 
