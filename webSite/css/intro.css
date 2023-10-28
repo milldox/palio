@@ -46,7 +46,7 @@ a{
   top: 0px;
   left: 0px;
   color: transparent;
-	background-color: rgb(69, 69, 83);
+	background-color: rgb(31, 31, 32);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: none;
@@ -81,7 +81,7 @@ a{
 .introShowImg li div h3 {
   /* font-family: "helvetica neue", helvetica; */
 	font-family: 'Kalam', cursive;
-  font-size: 6rem;
+  font-size: 5rem;
   padding: 0;
   line-height: 7rem;
 	color: rgba(255,255,255, 0.8);
@@ -128,7 +128,50 @@ a{
     animation-delay: 16s;
 }
 
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+	0% {
+	    opacity: 0;
+	    transform: translateY(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+	30% {
+	    opacity: 1;
+	    transform: scale(1);
+	}
+	35% { opacity: 0 }
+	50% {
+	    opacity: 0;
+	    transform: scale(10);
+	}
+	100% { opacity: 0 }
+}
+
 /* Animation for the introShowImg images */
+/*
 @-webkit-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -209,27 +252,9 @@ a{
 	}
 	100% { opacity: 0 }
 }
-@keyframes imageAnimation { 
-	0% {
-	    opacity: 0;
-	    animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 1;
-	    transform: scale(1.05);
-	    animation-timing-function: ease-out;
-	}
-	17% {
-	    opacity: 1;
-	    transform: scale(1.1);
-	}
-	50% {
-	    opacity: 0;
-	    transform: scale(1.1);
-	}
-	100% { opacity: 0 }
-}
+*/
 /* Animation for the title */
+/*
 @-webkit-keyframes titleAnimation { 
 	0% {
 	    opacity: 0;
@@ -310,36 +335,16 @@ a{
 	}
 	100% { opacity: 0 }
 }
-@keyframes titleAnimation { 
-	0% {
-	    opacity: 0;
-	    transform: translateY(200px);
-	}
-	8% {
-	    opacity: 1;
-	    transform: translateY(0px);
-	}
-	30% {
-	    opacity: 1;
-	    transform: scale(1);
-	}
-	35% { opacity: 0 }
-	50% {
-	    opacity: 0;
-	    transform: scale(10);
-	}
-	100% { opacity: 0 }
-}
-
+*/
 /* Show at least something when animations not supported */
 .no-cssanimations .introShowImg li span{
 	opacity: 1;
 }
 @media screen and (max-width: 1140px) { 
-	.introShowImg li div h3 { font-size: 100px }
+	.introShowImg li div h3 { font-size: 5rem }
 }
 @media screen and (max-width: 600px) { 
-	.introShowImg li div h3 { font-size: 50px }
+	.introShowImg li div h3 { font-size: 5rem }
 }
 
 .infoSections{
