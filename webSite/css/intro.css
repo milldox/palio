@@ -378,3 +378,12 @@ a{
 	background-image: url('../images/eastGarden.jpg') ;
 	background-repeat: no-repeat;
 }
+
+.swite {
+	display: flex;
+}
+
+.swite img{
+	
+}
+
