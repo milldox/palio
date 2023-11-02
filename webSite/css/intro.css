@@ -359,7 +359,7 @@ a{
 .infoText h{
 	margin: 5rem 15% 1rem 15%;
 	text-align: center;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	font-weight: 400;
 	display: flow-root;
 }
@@ -371,19 +371,84 @@ a{
 }
 
 .suitesSectionContainer{
-	margin: 3rem 0;
+	margin: 8rem 0 0 0;
+	width: 100vw%;
+	height: fit-content;
+	/*
+	background-image: url('../images/eastGarden.jpg') ;
+	*/
+	background-image: linear-gradient(rgb(136, 175, 100), rgb(180, 184, 176));
+	background-size: 100% 50%; 
+	background-repeat: no-repeat;
+	display: flow-root;
+}
+
+.suitesSectionContainer > h1 {
+	font-size: 2.3rem;
+	font-weight: 400;
+	padding: 2.3rem;
+	display: flow-root;
+
+}
+
+.suiteContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+	justify-content: space-evenly;
+}
+
+.suiteContainer a{
+	margin: 0;
+	padding: 0;
+}
+
+
+.suite {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+ 	background-color: rgb(215, 215, 215);
+ 	border-radius: 10px;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	padding: 0.5rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+ .suite:hover { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);}
+
+.suite h1 {
+	font-size: 1.2rem;
+	font-weight: bold;
+}      
+
+.site-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.contactSection{
+	margin: 7rem 0 0 0 ;
 	width: 100%;
 	height: fit-content;
-	background-size: 100% 50%; 
+	/*
 	background-image: url('../images/eastGarden.jpg') ;
+	*/
+	background-image: linear-gradient(rgb(63, 63, 62), rgb(237, 238, 237));
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.swite {
-	display: flex;
+.contactMap{
+	margin: 1rem;
+	width: 15rem;
+	height: 15rem;
 }
-
-.swite img{
-	
-}
-
