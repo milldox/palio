@@ -372,7 +372,7 @@ a{
 
 .suitesSectionContainer{
 	margin: 8rem 0 0 0;
-	width: 100vw%;
+	width: 100vw;
 	height: fit-content;
 	/*
 	background-image: url('../images/eastGarden.jpg') ;
@@ -423,6 +423,13 @@ a{
 .suite h1 {
 	font-size: 1.2rem;
 	font-weight: bold;
+	color: rgb(0, 0, 0);
+}      
+
+.suite a {
+	font-size: 1.1rem;
+	font-weight: lighter;
+	color: rgba(0, 0, 0, 0.78);
 }      
 
 .site-link {
@@ -445,6 +452,14 @@ a{
 	background-image: linear-gradient(rgb(63, 63, 62), rgb(237, 238, 237));
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+a[href^='mailto']::before {
+  content: '📧 ';
+}
+
+a[href^='tel']::before {
+  content: '📞 ';
 }
 
 .contactMap{
