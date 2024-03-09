@@ -442,7 +442,7 @@ a{
 }
 
 
-.contactSection{
+.contactContainerPrev{
 	margin: 7rem 0 0 0 ;
 	width: 100%;
 	height: fit-content;
@@ -454,16 +454,55 @@ a{
 	background-repeat: no-repeat;
 }
 
-a[href^='mailto']::before {
-  content: '📧 ';
+.contactContainer {
+	background-color: rgba(0, 0, 0, 0.692) ;
+	background-size: cover;
+	background-repeat: no-repeat;
+  margin: 7rem 0 0 0 ;
+	width: 100%;
+  height: fit-content;
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+	justify-content: space-evenly;
 }
 
-a[href^='tel']::before {
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+	padding: 0.8rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+.contactBox img {
+	max-width:50%;
+	max-height: 50%;
+	vertical-align: middle;
+}
+
+.contactBox a[href^='Mailto:']::before {
+  content: '📤 ';
+}
+
+.contactBox a[href^='Tel:']::before {
   content: '📞 ';
 }
 
-.contactMap{
-	margin: 1rem;
-	width: 15rem;
-	height: 15rem;
+.contactBox h1 { 
+	font-size: large;
+	font-style: italic ;
+	font-weight:bolder ;
+	color: #b6b6b6;
+	padding: 1rem;
+	vertical-align: middle;
+}
+
+.contactBox a { 
+	font-size: medium;
+	color: #b6b6b6;
+	vertical-align: middle;
 }

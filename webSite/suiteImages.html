@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/images.css" />
+    <link rel="stylesheet" href="css/suiteImages.css" />
   </head>
   
   <body>
      <div class="suitesSectionContainer">
+       <button class="suiteScaleButton" onclick="toggleSuiteWidth()" type="button">↔️</button>
       <h1> Mint</h1>
         <div class="suiteContainer">
 
@@ -34,6 +35,16 @@
           </div>
 
         </div>
+    <script>
+      function toggleSuiteWidth() {
 
+        let currWidh = getComputedStyle(document.documentElement).getPropertyValue('--suiteWidth');
+        let newWidth = getComputedStyle(document.documentElement).getPropertyValue('--suiteWidthFS');
+        if (currWidh == newWidth) {
+          newWidth = getComputedStyle(document.documentElement).getPropertyValue('--suiteWidthSmall');
+        }
+        document.documentElement.style.setProperty('--suiteWidth', newWidth);
+      }
+    </script>
   </body>
 </html>

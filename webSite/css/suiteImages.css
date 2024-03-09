@@ -1,3 +1,11 @@
+:root {
+  --suiteWidthSmall: 20rem ;
+  --suiteWidthFS: 100% ;
+	--suiteWidth: var(--suiteWidthSmall);
+	/*
+	--suiteImgWidth: var(--suiteImgWidthSmall);
+	*/
+}
 
 body{
   overflow-y: auto;
@@ -29,6 +37,21 @@ a{
 	display: flow-root;
 }
 
+.suiteScaleButton{
+	position: fixed;
+	background-color:  rgb(215, 215, 215);
+	color: black;
+	border : 0.17rem solid black;
+	top: 0;
+	left: 50%;
+	width: auto; 
+	height: auto;
+	padding: 0;
+	margin: 0;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
 .suitesSectionContainer > h1 {
 	font-size: 2.3rem;
 	font-weight: 400;
@@ -53,7 +76,7 @@ a{
 
 
 .suiteImg {
-  width: 20rem;
+  width: var(--suiteWidth);
  	background-color: rgb(215, 215, 215);
  	border-radius: 10px;
  	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
