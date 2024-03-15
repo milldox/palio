@@ -1,5 +1,5 @@
 :root {
-  --suiteWidthSmall: 20rem ;
+  --suiteWidthSmall: 30rem ;
   --suiteWidthFS: 100% ;
 	--suiteWidth: var(--suiteWidthSmall);
 	/*
@@ -42,8 +42,8 @@ a{
 	background-color:  rgb(215, 215, 215);
 	color: black;
 	border : 0.17rem solid black;
-	top: 0;
-	left: 50%;
+	top: 5%;
+	right: 5%;
 	width: auto; 
 	height: auto;
 	padding: 0;
@@ -61,6 +61,8 @@ a{
 }
 
 .suiteContainer {
+	padding: 0;
+	margin: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -75,7 +77,7 @@ a{
 }
 
 
-.suiteImg {
+.suiteImgPrev {
   width: var(--suiteWidth);
  	background-color: rgb(215, 215, 215);
  	border-radius: 10px;
@@ -84,6 +86,15 @@ a{
 	text-align: center;
 	margin: 1rem;
 }
+.suiteImg {
+  width: var(--suiteWidth);
+ 	background-color: rgb(215, 215, 215);
+	padding: 0;
+	border: 0;
+	margin: 0;
+	text-align: center;
+}
+
 
  .suite:hover { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);}
 
