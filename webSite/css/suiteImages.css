@@ -6,7 +6,7 @@
 	--suiteImgWidth: var(--suiteImgWidthSmall);
 	*/
 }
-
+/*
 body{
   overflow-y: auto;
   overflow-x: auto;
@@ -24,15 +24,19 @@ a{
 .clr{
   clear: both;
 }
+*/
 
 
-.suitesSectionContainer{
+.imgGalleryPopup{
+	top: 0;
+	left:0;
 	margin: 0rem 0 0 0;
 	width: 100vw;
 	height: fit-content;
 	/*
 	background-image: url('../images/eastGarden.jpg') ;
 	*/
+	background-size: 100% 50%; 
 	background-repeat: no-repeat;
 	display: flow-root;
 }
@@ -52,7 +56,7 @@ a{
 	cursor: pointer;
 }
 
-.suitesSectionContainer > h1 {
+.imgGalleryPopup > h1 {
 	font-size: 2.3rem;
 	font-weight: 400;
 	padding: 2.3rem;
@@ -60,7 +64,7 @@ a{
 
 }
 
-.suiteContainer {
+.suiteImgContainer {
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -69,11 +73,6 @@ a{
   flex-wrap: wrap;
   align-content: center;
 	justify-content: space-evenly;
-}
-
-.suiteContainer a{
-	margin: 0;
-	padding: 0;
 }
 
 
@@ -93,48 +92,4 @@ a{
 	border: 0;
 	margin: 0;
 	text-align: center;
-}
-
-
- .suite:hover { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);}
-
-.suite h1 {
-	font-size: 1.2rem;
-	font-weight: bolder;
-}      
-
-.site-link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-
-.contactSection{
-	margin: 7rem 0 0 0 ;
-	width: 100%;
-	height: fit-content;
-	/*
-	background-image: url('../images/eastGarden.jpg') ;
-	*/
-	background-image: linear-gradient(rgb(63, 63, 62), rgb(237, 238, 237));
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-a[href^='mailto']::before {
-  content: '📧 ';
-}
-
-a[href^='tel']::before {
-  content: '📞 ';
-}
-
-.contactMap{
-	margin: 1rem;
-	width: 15rem;
-	height: 15rem;
 }
