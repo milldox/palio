@@ -69,7 +69,7 @@ a{
   text-align: center;
 	overflow: hidden;
   opacity: 0;
-  z-index: 1000;
+  z-index: 1;
 	/*
   -webkit-animation: titleAnimation 24s linear infinite 0s;
   -moz-animation: titleAnimation 24s linear infinite 0s;
@@ -416,6 +416,7 @@ a{
 	padding: 0.5rem;
 	text-align: center;
 	margin: 1rem;
+	cursor: pointer;
 }
 
  .suite:hover { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);}

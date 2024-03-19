@@ -53,14 +53,12 @@
       <h1> The east garden villa</h1>
 
       <div class="suiteContainer">
-        <div class="suite">
-          <a href="suiteImages.html"> 
-            <img src="images/mint.jpg" alt="Mint" style="width:100%">
-            <div>
-              <h1>Mint</h1>
-              <p>Two bedroom suite with kitchen, livingroom, bathroom and a private swimming pool. Up to six guests.</p>
-            </div>
-          </a>
+        <div class="suite"  onclick="showImgGallery('mint')">
+          <img src="images/mint.jpg" alt="Mint" style="width:100%">
+          <div>
+            <h1>Mint</h1>
+            <p>Two bedroom suite with kitchen, livingroom, bathroom and a private swimming pool. Up to six guests.</p>
+          </div>
         </div>
         <div class="suite">
           <a href="#" id="suiteImagesPopup">
@@ -153,8 +151,9 @@
     </div>
 
     <!-- ***** image gallery popup section ***** --> 
-    <div id="suiteImagesPopup" class="imgGalleryPopup">
-      <button class="suiteScaleButton" onclick="toggleSuiteWidth()" type="button">↔️</button>
+    <div id="imgGalleryPopupId" class="imgGalleryPopup" style="display: none;">
+      <button class="imgScaleButton" onclick="toggleSuiteWidth()" type="button">↔️</button>
+      <button class="closePopupButton" onclick="closePopup()" type="button"> x </button>
       <h1> Mint</h1>
       <div class="suiteImgContainer">
         <div class="suiteImg">
@@ -191,6 +190,18 @@
           newWidth = getComputedStyle(document.documentElement).getPropertyValue('--suiteWidthSmall');
         }
         document.documentElement.style.setProperty('--suiteWidth', newWidth);
+      }
+
+      function showImgGallery(suiteName) {
+        let popup = document.getElementById("imgGalleryPopupId");
+        popup.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePopup() {
+        let popup = document.getElementById("imgGalleryPopupId");
+        popup.style.display = "none";
+        document.body.style.overflow = "auto";
       }
     </script>
 
