@@ -23,7 +23,7 @@
       <ul>
         <li><span>Image 01</span><div><h3>to your best holidays</h3></div></li>
         <li><span>Image 02</span><div><h3>to a place of your dreams</h3></div></li>
-        <li><span>Image 03</span><div><h3>to an unforgetable adventure</h3></div></li>
+        <li><span>Image 03</span><div><h3>to an unforgettable adventure</h3></div></li>
       </ul>
     </div>
 
@@ -153,7 +153,7 @@
     <!-- ***** image gallery popup section ***** --> 
     <div id="imgGalleryPopupId" class="imgGalleryPopup" style="display: none;">
       <button class="imgScaleButton" onclick="toggleSuiteWidth()" type="button">↔️</button>
-      <button class="closePopupButton" onclick="closePopup()" type="button"> x </button>
+      <button class="closePopupButton" onclick="closePopup()" type="button">X</button>
       <h1> Mint</h1>
       <div class="suiteImgContainer">
         <div class="suiteImg">
@@ -202,6 +202,8 @@
         let popup = document.getElementById("imgGalleryPopupId");
         popup.style.display = "none";
         document.body.style.overflow = "auto";
+        let smallWidth = getComputedStyle(document.documentElement).getPropertyValue('--swuiteWidthSmall');
+        document.documentElement.style.setProperty('--suiteWidth', smallWidth);
       }
     </script>
 

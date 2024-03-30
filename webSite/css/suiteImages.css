@@ -44,8 +44,8 @@ a{
 	position: fixed;
 	background-color:  rgb(215, 215, 215);
 	color: black;
-	border : 0.17rem solid black;
-	top: 5%;
+	border : none;
+	top: 3%;
 	right: 5%;
 	width: auto; 
 	height: auto;
@@ -61,13 +61,15 @@ a{
 	color: black;
 	border : none;
 	border-radius: 50%;
-	top: 2%;
+	top: 3%;
 	left: 50%;
-	width: auto; 
-	height: auto;
+	width: 2.5rem; 
+	height: 2.5rem;
+	font-size: 1.5rem;
+	vertical-align: middle;
+	align: middle;
 	padding: 0;
 	margin: 0;
-	font-size: 2rem;
 	cursor: pointer;
 }
 
