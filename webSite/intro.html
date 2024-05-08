@@ -192,10 +192,14 @@
         document.documentElement.style.setProperty('--suiteWidth', newWidth);
       }
 
-      function showImgGallery(suiteName) {
+      function showImgGallery(suiteName, numImgs) {
         let popup = document.getElementById("imgGalleryPopupId");
         popup.style.display = "block";
         document.body.style.overflow = "hidden";
+        for (let i = 1; i < numImgs; i++) {
+          let imgNm = suiteName + i.toString();
+
+        }
       }
 
       function closePopup() {

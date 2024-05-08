@@ -45,6 +45,7 @@ a{
 	background-color:  rgb(215, 215, 215);
 	color: black;
 	border : none;
+	border-radius: 30%;
 	top: 3%;
 	right: 5%;
 	width: auto; 
